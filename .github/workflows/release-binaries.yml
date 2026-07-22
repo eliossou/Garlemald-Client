@@ -43,7 +43,7 @@ jobs:
           # scripts/package-macos.sh --universal (aarch64 is the host; we add x86_64).
           - { os: ubuntu-latest,  target: x86_64-unknown-linux-gnu, rust_target: x86_64-unknown-linux-gnu }
           - { os: macos-latest,   target: universal-apple-darwin,   rust_target: x86_64-apple-darwin }
-          - { os: windows-latest, target: x86-pc-windows-msvc,   rust_target: x86-pc-windows-msvc }
+          - { os: windows-latest, target: i686-pc-windows-msvc,   rust_target: i686-pc-windows-msvc }
     steps:
       - name: Resolve tag
         id: tag
