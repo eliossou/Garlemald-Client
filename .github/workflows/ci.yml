@@ -35,7 +35,7 @@ jobs:
       - uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
           rustflags: ""
-          cache: false   # fmt does not compile, so there is nothing to cache
+          cache: false  # fmt does not compile, so there is nothing to cache
       - run: cargo fmt --all --check
 
   clippy:
